@@ -16,10 +16,10 @@
 	--gray-999_40: hsla(var(--gray-999-basis), 0.4);
 	--gray-999: #ffffff;
 
-	--accent-light: #c561f6;
-	--accent-regular: #7611a6;
-	--accent-dark: #1c0056;
-	--accent-overlay: hsla(280, 89%, 67%, 0.33);
+	--accent-light: #549AFE;
+	--accent-regular: #1066E4;
+	--accent-dark: #032E69;
+	--accent-overlay: #B2D0F9;
 	--accent-subtle-overlay: var(--accent-overlay);
 	--accent-text-over: var(--gray-999);
 
@@ -38,7 +38,7 @@
 	);
 	--gradient-accent-orange: linear-gradient(
 		150deg,
-		#ca7879,
+		#bf78ca,
 		var(--accent-regular),
 		var(--accent-dark)
 	);
@@ -92,11 +92,11 @@
 	--gray-999-basis: 225, 31%, 5%;
 	--gray-999: #090b11;
 
-	--accent-light: #1c0056;
-	--accent-regular: #7611a6;
-	--accent-dark: #c561f6;
-	--accent-overlay: hsla(280, 89%, 67%, 0.33);
-	--accent-subtle-overlay: hsla(281, 81%, 36%, 0.33);
+	--accent-light: #14407E;
+	--accent-regular: #1066E4;
+	--accent-dark: #549AFE;
+	--accent-overlay: #B2D0F9;
+	--accent-subtle-overlay: #14407E;
 	--accent-text-over: var(--gray-0);
 
 	--link-color: var(--accent-dark);
@@ -105,7 +105,7 @@
 	--gradient-subtle: linear-gradient(150deg, var(--gray-900) 19%, var(--gray-999) 81%);
 	--gradient-accent-orange: linear-gradient(
 		150deg,
-		#ca7879,
+		#bf78ca,
 		var(--accent-regular),
 		var(--accent-light)
 	);
@@ -233,6 +233,25 @@ h5 {
 .gap-48 {
 	gap: 12rem;
 }
+
+.skills-lists {
+	display: flex;
+	gap: 40px;  /* Space between the lists */
+	justify-content: flex-start;
+	align-items: flex-start;
+  }
+  
+.skills-lists ul {
+	list-style-type: disc;
+	margin: 0;
+	padding: 0 20px 0 20px;
+  }
+  
+.skills-lists li:first-child {
+	list-style: none;
+	font-weight: bold;
+	margin-bottom: 12px;
+  }
 
 @media (min-width: 50em) {
 	.lg\:gap-2 {

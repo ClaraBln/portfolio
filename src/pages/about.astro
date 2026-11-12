@@ -3,56 +3,88 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
+import CallToAction from '../components/CallToAction.astro';
 ---
 
-<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
+<BaseLayout title="About | Clara Blanchard" description="About Clara Blanchard">
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+				title="Get to know me"
+				tagline="Everything you need to know at a glance."
 			>
-				<img
+				<!-- <img
 					width="1553"
 					height="873"
 					src="/assets/at-work.jpg"
 					alt="Jeanine White at work with a colleague"
-				/>
+				/> -->
+
+				<div class="cta">
+					<CallToAction href="/assets/CV_Clara_Blanchard.pdf" download="CV_Clara_Blanchard.pdf">
+						Download my CV
+					</CallToAction>
+				</div>
+			
 			</Hero>
 
 			<section>
 				<h2 class="section-title">Background</h2>
 				<div class="content">
 					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+						I am currently a second-year student pursuing a Master’s degree in Natural Language Processing at the University of Strasbourg in France. 
+						My initial exposure to the IT field came during my studies in Translation Technologies at the University of Geneva, which sparked a deep and growing interest in this field.
 					</p>
 					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
+						Throughout my academic journey, I have developed solid skills in programming (Python, Java), database management (SQL), data analysis, and machine learning. 
+						My major has also provided me with hands-on experience working with large language models (LLMs), an area I am currently exploring in depth through my master’s thesis.
 					</p>
 					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
+						I am now looking for my first position as a Data Analyst or Data Scientist, where I can apply my technical skills, keep learning, and contribute effectively to a collaborative team.
 					</p>
 				</div>
 			</section>
 			<section>
-				<h2 class="section-title">Education</h2>
+				<h2 class="section-title">Experience</h2>
 				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
+					<p>
+						<strong>Data Analyst Intern</strong> — Losinger Marazzi (Bouygues Construction), Switzerland
+						March – September 2026
+					</p>
+					<p>
+						Built and deployed production Power BI dashboards from scratch for financial reporting (forecasting, rental billing, internal costs), now used by the CFO, 
+						branch managers, and the executive committee. Extracted and modeled data from Snowflake using SQL.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Diploma</h2>
+				<div class="content">
+					<p>2026 - Master's Degree in Natural Language Processing - University of Strasbourg, France</p>
+					<p>2024 - Master's Degree in Translation and Technologies — University of Geneva, Switzerland</p>
+					<p>2022 - Bachelor's Degree in Foreign Languages and Business - University of Angers, France</p>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Skills</h2>
 				<div class="content">
-					<p>officia unde omnis</p>
+					<div class="skills-lists">
+						<ul>
+						  <li><strong>Technical Skills</strong></li>
+						  <li><strong>Data & Analytics - </strong>Power BI, Snowfalke, SQL, Tableau, Pandas</li>
+						  <li><strong>Programming - </strong>Python, Java</li>
+						  <li><strong>Machine Learning - </strong>NLTK, spaCy, scikit-learn, TensorFlow</li>
+						  <li><strong>Tools - </strong>Streamlit, VSCode, Git, Pycharm</li>
+						</ul>
+						<ul>
+						  <li><strong>Soft Skills</strong></li>
+						  <li>Problem-solving</li>
+						  <li>Teamwork</li>
+						  <li>Adaptability</li>
+						  <li>Resilience</li>
+						  <li>Communication</li>
+						</ul>
+					  </div>
 				</div>
 			</section>
 		</main>

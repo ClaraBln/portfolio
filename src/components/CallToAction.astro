@@ -1,12 +1,14 @@
 ---
+// Composant CallToAction.astro
 interface Props {
-	href: string;
+  href: string;
+  download?: boolean | string;
 }
 
-const { href } = Astro.props;
+const { href, download } = Astro.props;
 ---
 
-<a href={href}><slot /></a>
+<a href={href} {...(download ? { download: typeof download === "string" ? download : "" } : {})}><slot /></a>
 
 <style>
 	a {
